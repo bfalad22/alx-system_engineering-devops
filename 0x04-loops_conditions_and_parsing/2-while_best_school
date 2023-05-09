@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 
-cont=1
+count=0
 
-while [$cont -le 10];
-
+while ((count<10))
 do
-
 	echo "Best School"
-	((cont=cont +1))
+	count=$((count + 1))
 
 done

@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# This scripts prints results for superstitious numbers
+
+while ((count <= 20))
+do
+	case $((count)) in
+	      4)
+		echo "$count"
+		echo "bad luck from China"
+		;;
+	      9)
+		echo "$count"
+		echo "bad luck from Japan"
+		;;
+		echo "$count"
+		echo "bad luck from Italy"
+		;;
+	     *)
+		echo "$count"
+		;;
+	esac
+
+	count=$((count + 1))
+done

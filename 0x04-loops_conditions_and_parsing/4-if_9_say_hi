@@ -1,19 +1,12 @@
 #!/usr/bin/env bash
-# This scripts prints "Best School" 10 times
-# but "Hi" on the 9th interation
-
-count=1
-
-while [ $count -le 10]
+#Bash script that displays "Best School" 10 times and "Hi" in 9th itereation times
+cont=0
+while [ $cont -lt 10];
 do
-	if [ $count -eq 9 ]
+	if [ $cont -eq 9 ]
 	then
-		echo "Best School"
-		echo "Hi"
-	else
-		echo "Best School"
-
-	fi
-	count=$((count+1))
-
+echo "Hi"
+     fi
+     echo "Best School"
+     ((cont=cont+1))
 done
